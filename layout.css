@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+
+}
+@font-face{
+    font-family:xyz;
+    src:url(./fonts/BricolageGrotesque_18pt-Regular.ttf)
+}
+body{
+    background-color: lightcoral;
+    
+}
+#loader{
+    background:url(./images/ZKZg.gif) no-repeat center;
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    z-index:56;
+}
+.logo_img{
+    width:100px;
+    height:60px;
+}
+.navbar{
+    background-color: black;
+    position: relative;
+    height:75px
+}
+.logo{
+    top:8px;
+    left:100px;
+    position: absolute;
+}
+.menu{
+    position: absolute;
+    right:80px;
+    top:8px
+}
+.menu ul li{
+    font-family:xyz;
+    display: inline-block;
+    width:150px;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    color:white;
+}
+h1{
+    margin-bottom:30px;
+}
+.se1{
+    display: flex;
+    flex-direction: column;
+    height:72vh;
+    background-color: black;
+    color: white;
+    font-family:xyz;
+    margin:23px auto;
+    width:75%;
+    border-radius: 15px;
+    padding:34px;
+    background: url(./images/pexels-daniel-reche-3721941.jpg);
+    background-size: 1250px 589px;
+    background-repeat: no-repeat;
+
+}
+.se2{
+    position: absolute;
+    font-family: xyz;
+    right:202px;
+    top:182px;
+    
+   
+}
+
+.songpic2{
+    height:50px;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    width:450px;
+    color:black;
+    margin: 16px 0;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.songpic2:hover{
+    transform: scale(1.1,1.1);
+}
+.songpic2 img{
+    width: 43px;
+    margin: 0 23px;
+    /* margin: 4px 15px 4px 20px; */
+}
+.songpic{
+    height:50px;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    width:40%;
+    color:black;
+    margin: 8px 0;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songpic:hover{
+    transform: scale(1.1,1.1);
+}
+.songpic img{
+    width: 43px;
+    margin: 0 23px;
+}
+
+.footer{
+    position: absolute;
+    left:190px; 
+    height:80px;
+    width:75%;
+    bottom:68px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px ;
+}
+.icons{
+   position: absolute;
+   bottom: 30px;
+   left:507px;
+   font-size: 40px;
+   color:wheat;
+   cursor: pointer;
+}
+.play-button{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.gif img{
+    position: absolute;
+    left: 10px;
+    bottom: -35px;
+    height:150px;
+    width:80px;
+   opacity: 0;
+   transition: 0.8s linear;
+}
+
+.gif span{
+    position: absolute;
+    left:87px;
+    bottom:37px;
+    animation:move;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    cursor: pointer;
+}
+@keyframes move{
+    from{left:87px;}
+    to{left:120px;}
+}
+.footer2{
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    bottom: 0px;
+    background-color:black;
+}
+.footer2 h4{
+    font-family: xyz;
+    text-align: center;
+    color: white;
+}
+
+ #progressbar{
+    position: absolute;
+    bottom: 11px;
+    width:70%;
+    background-color: blue;
+    cursor: pointer;
+}
+/* timestamps */
+.timestamp{
+    margin: 0 23px;
+    
+}
+
+@media screen and (max-width:768px){
+    .footer{
+        display:none;
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+        top:8px;
+        left:80px;
+    }
+    .se2{
+        display: none;
+    }
+    .songpic{
+        width:400px
+    }
+}
